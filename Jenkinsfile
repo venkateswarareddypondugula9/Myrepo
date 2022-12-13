@@ -4,4 +4,10 @@ node('built-in')
 	{
     git 'https://github.com/sunildevops77/maven.git'
 	}
+	stage('Continuous build')
+        {
+        sh 'mvn package'
+	}
+
 }
+
